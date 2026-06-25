@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Alex Chen — AI/ML Engineer</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <span class="nav-name">Alex Chen</span>
+    <ul class="nav-links">
+      <li><a href="#work">Work</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-label">AI / ML Engineer</div>
+    <h1 class="hero-title">
+      Building systems that<br/>
+      <span class="hero-accent">learn from data.</span>
+    </h1>
+    <p class="hero-sub">
+      Specialize in deep learning, NLP, and production ML infrastructure.<br/>
+      Currently at — <span class="mono">Open to opportunities</span>
+    </p>
+    <div class="hero-cta">
+      <a href="#work" class="btn-primary">View Projects</a>
+      <a href="assets/resume.pdf" class="btn-ghost" target="_blank">Resume ↗</a>
+    </div>
+    <!-- Animated grid background -->
+    <canvas id="grid-canvas"></canvas>
+  </section>
+
+  <!-- STATS BAR -->
+  <div class="stats-bar">
+    <div class="stat"><span class="stat-num">12+</span><span class="stat-label">ML Projects</span></div>
+    <div class="stat-divider"></div>
+    <div class="stat"><span class="stat-num">3</span><span class="stat-label">Papers Published</span></div>
+    <div class="stat-divider"></div>
+    <div class="stat"><span class="stat-num">94%</span><span class="stat-label">Avg Model Accuracy</span></div>
+    <div class="stat-divider"></div>
+    <div class="stat"><span class="stat-num">5yrs</span><span class="stat-label">Experience</span></div>
+  </div>
+
+  <!-- WORK -->
+  <section class="section" id="work">
+    <div class="section-header">
+      <span class="section-eyebrow">Selected Work</span>
+      <h2 class="section-title">Projects</h2>
+    </div>
+    <div class="projects-grid">
+
+      <article class="project-card project-featured">
+        <div class="project-meta">
+          <span class="project-tag">NLP</span>
+          <span class="project-tag">Transformers</span>
+        </div>
+        <h3 class="project-name">Semantic Search Engine</h3>
+        <p class="project-desc">
+          Fine-tuned BERT-based model for domain-specific semantic retrieval. Reduced search latency by 40% with FAISS indexing over 10M+ documents.
+        </p>
+        <div class="project-stack">
+          <code>PyTorch</code><code>HuggingFace</code><code>FAISS</code><code>FastAPI</code>
+        </div>
+        <div class="project-links">
+          <a href="#" class="link-arrow">GitHub ↗</a>
+          <a href="#" class="link-arrow">Demo ↗</a>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-meta">
+          <span class="project-tag">Computer Vision</span>
+        </div>
+        <h3 class="project-name">Medical Image Classifier</h3>
+        <p class="project-desc">
+          CNN pipeline for chest X-ray pathology detection. Achieved 96.2% AUC on NIH dataset using EfficientNet with custom augmentation strategy.
+        </p>
+        <div class="project-stack">
+          <code>TensorFlow</code><code>EfficientNet</code><code>OpenCV</code>
+        </div>
+        <div class="project-links">
+          <a href="#" class="link-arrow">GitHub ↗</a>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-meta">
+          <span class="project-tag">LLM</span>
+          <span class="project-tag">RAG</span>
+        </div>
+        <h3 class="project-name">RAG Document Assistant</h3>
+        <p class="project-desc">
+          Retrieval-augmented generation system for enterprise knowledge bases. Integrated with LangChain and custom vector store for sub-second response.
+        </p>
+        <div class="project-stack">
+          <code>LangChain</code><code>OpenAI</code><code>Pinecone</code><code>React</code>
+        </div>
+        <div class="project-links">
+          <a href="#" class="link-arrow">GitHub ↗</a>
+          <a href="#" class="link-arrow">Live ↗</a>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-meta">
+          <span class="project-tag">Time Series</span>
+          <span class="project-tag">MLOps</span>
+        </div>
+        <h3 class="project-name">Forecasting Pipeline</h3>
+        <p class="project-desc">
+          End-to-end ML pipeline for demand forecasting at scale. Deployed on Kubernetes with MLflow tracking, automated retraining, and drift detection.
+        </p>
+        <div class="project-stack">
+          <code>Prophet</code><code>MLflow</code><code>Kubernetes</code><code>Airflow</code>
+        </div>
+        <div class="project-links">
+          <a href="#" class="link-arrow">GitHub ↗</a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section section-about" id="about">
+    <div class="about-grid">
+      <div class="about-left">
+        <span class="section-eyebrow">About</span>
+        <h2 class="section-title">Background</h2>
+        <p class="about-text">
+          I build ML systems end-to-end — from research to production. Background in applied mathematics and software engineering, with a focus on making models that actually work in the real world.
+        </p>
+        <p class="about-text">
+          Previously at <strong>Google DeepMind</strong> and <strong>Stripe</strong>. MS in Computer Science from Stanford, thesis on efficient transformer architectures.
+        </p>
+      </div>
+      <div class="about-right">
+        <div class="skills-block">
+          <h4 class="skills-title">Core Skills</h4>
+          <div class="skills-list">
+            <div class="skill-row"><span class="skill-name">Deep Learning</span><div class="skill-bar"><div class="skill-fill" style="--w:92%"></div></div></div>
+            <div class="skill-row"><span class="skill-name">NLP / LLMs</span><div class="skill-bar"><div class="skill-fill" style="--w:88%"></div></div></div>
+            <div class="skill-row"><span class="skill-name">Computer Vision</span><div class="skill-bar"><div class="skill-fill" style="--w:80%"></div></div></div>
+            <div class="skill-row"><span class="skill-name">MLOps</span><div class="skill-bar"><div class="skill-fill" style="--w:75%"></div></div></div>
+            <div class="skill-row"><span class="skill-name">Python / PyTorch</span><div class="skill-bar"><div class="skill-fill" style="--w:95%"></div></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section section-contact" id="contact">
+    <span class="section-eyebrow">Get in Touch</span>
+    <h2 class="contact-title">Let's work together.</h2>
+    <p class="contact-sub">Open to full-time roles, research collaborations, and consulting.</p>
+    <a href="mailto:alex@example.com" class="btn-primary">alex@example.com</a>
+    <div class="social-links">
+      <a href="https://github.com" target="_blank">GitHub</a>
+      <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+      <a href="https://scholar.google.com" target="_blank">Scholar</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <span class="mono footer-text">Alex Chen · Built with HTML/CSS/JS</span>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
